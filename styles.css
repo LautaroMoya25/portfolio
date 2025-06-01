@@ -1,0 +1,12 @@
+.HTTP{justify-content: center;}
+.presentation {background-color: beige;margin-top: 10px; 
+display: flex;}
+
+.about-me {background-color: blue;margin-top: 10px;margin-bottom: 10px;
+display: flex;}
+
+.skills {background-color: brown;margin-top: 10px;margin-bottom: 10px;
+display: flex;}
+
+.contact {background-color: aquamarine;margin-top: 10px;margin-bottom: 10px;
+     display: flex;}
