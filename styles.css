@@ -1,12 +1,111 @@
-.HTTP{justify-content: center;}
-.presentation {background-color: beige;margin-top: 10px; 
-display: flex;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.about-me {background-color: blue;margin-top: 10px;margin-bottom: 10px;
-display: flex;}
+  html{scroll-behavior: smooth;}
+  
+  body {;
+  font-family: courier, monospace;}
 
-.skills {background-color: brown;margin-top: 10px;margin-bottom: 10px;
-display: flex;}
+  header {
+  background-color: rgba(255, 171, 171, 0.404);
+  color: black;
+  padding: 15px 20px; }
 
-.contact {background-color: aquamarine;margin-top: 10px;margin-bottom: 10px;
-     display: flex;}
+
+.presentation {background-color: beige;
+max-width: 1920px;
+  margin: 0 auto;
+padding: 40vh;
+display: flex;
+flex-direction: column;
+border-radius: 10px;}
+.presentation h1 {align-self: center;}
+
+.about-me{background-color:rgba(210, 241, 252, 0.699);
+max-width: 1920px;
+  margin: 0 auto;
+ display: flex;
+ padding: 50vh;
+ flex-direction: column;
+border-radius: 10px;}
+.about-me h1{align-self: center;}
+
+.skills {background-color: beige;
+max-width: 1920px;
+  margin: 0 auto;;
+ display: flex;
+ padding: 50vh;
+ flex-direction: column;
+border-radius: 10px;}
+.skills h1{align-self: center;}
+
+.contact {
+max-width: 1920px;
+  margin: 0 auto;
+  padding: 10vh;
+ display: flex;
+ flex-direction: column;
+border-radius: 10px;}
+.contact p,h1 {align-self: center;
+color: black;}
+
+.nav-links {
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(210, 241, 252, 0.699);
+  width: 200px;
+  display: none;
+  flex-direction: column;
+  border: 1px solid rgba(210, 241, 252, 0.699); }
+
+ .nav-links a {
+  text-decoration: none;
+  color: black;
+  padding: 12px 20px;
+  display: block;
+  border-bottom: 1px solid rgba(210, 241, 252, 0.699);}
+
+  .nav-links a:hover {
+  background-color: rgba(210, 241, 252, 0.699);
+}
+  .menu-toggle {
+  font-size: 1.8em;
+  cursor: pointer;
+  display: block;
+padding: 15px; }
+
+  #menu-checkbox {
+  display: none; }
+
+  #menu-checkbox:checked + label + nav .nav-links {
+  display: flex;}
+    
+    @media (min-width: 768px) 
+    { .menu-toggle {
+    display: none; }
+
+  nav {
+    position: static; }
+
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    width: auto;
+    border: none; }
+
+  .nav-links a {
+    border: none;
+    padding: 10px 15px; }
+
+  .nav-links a:hover {
+    background-color: rgba(210, 241, 252, 0.699); }}
+
+    footer{background-color: rgba(255, 171, 171, 0.404);
+  color: white;
+  padding: 15px 20px; }
