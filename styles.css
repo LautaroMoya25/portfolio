@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-  html{scroll-behavior: smooth;}
+  html{scroll-behavior: smooth;
+  font-size: large;
+font-weight: 525;}
   
   body {;
   font-family: courier, monospace;}
@@ -85,6 +87,7 @@ padding: 15px; }
   display: flex;}
     
     @media (min-width: 768px) 
+    
     { .menu-toggle {
     display: none; }
 
@@ -109,3 +112,4 @@ padding: 15px; }
     footer{background-color: rgba(255, 171, 171, 0.404);
   color: white;
   padding: 15px 20px; }
+
