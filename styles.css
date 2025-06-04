@@ -13,7 +13,11 @@ font-weight: 525;}
   header {
   background-color: rgba(255, 171, 171, 0.404);
   color: black;
-  padding: 15px 20px; }
+  padding: 15px 20px;
+  position: relative; 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;}
 
 
 .presentation {background-color: beige;
@@ -61,14 +65,17 @@ margin-bottom: 20rem;}
 
 .nav-links {
   list-style: none;
-  position: absolute;
-  top: 60px;
+  top: 100%;
+  left: 0;
   right: 0;
   background-color: rgba(210, 241, 252, 0.699);
-  width: 200px;
+  width: 100%;
+  position: absolute;
   display: none;
   flex-direction: column;
-  border: 1px solid rgba(210, 241, 252, 0.699); }
+margin: 0;
+padding: 0;
+z-index: 1000;}
 
  .nav-links a {
   text-decoration: none;
@@ -84,36 +91,47 @@ margin-bottom: 20rem;}
   font-size: 1.8em;
   cursor: pointer;
   display: block;
-padding: 15px; }
+padding: 15px; 
+order: 2;}
 
-  #menu-checkbox {
+.logo{cursor: pointer;
+font-size: 24px;
+order: 1;
+flex-grow: 1;}
+
+#menu-checkbox {
   display: none; }
 
-  #menu-checkbox:checked + label + nav .nav-links {
-  display: flex;}
+header #menu-checkbox:checked ~ nav .nav-links {
+ display: flex;
+ flex-direction: column;}
     
-    @media (min-width: 768px) 
-    
-    { .menu-toggle {
-    display: none; }
+    @media (min-width: 768px) {.menu-toggle{display: none;}}
 
-  nav {
-    position: static; }
+   .logo{order: 1;}
 
-  .nav-links {
-    display: flex;
+    header{flex-direction: row;
+    justify-content: space-between;
+  align-items: center;}
+
+   nav {
+    position: static; 
+  order: 2;}
+
+   .nav-links {
+    display: flex !important;
     position: static;
     flex-direction: row;
     background-color: transparent;
     width: auto;
-    border: none; }
+  border: none;}
 
   .nav-links a {
     border: none;
     padding: 10px 15px; }
 
   .nav-links a:hover {
-    background-color: rgba(210, 241, 252, 0.699); }}
+    background-color: rgba(210, 241, 252, 0.699); }
 
     footer{background-color: rgba(255, 171, 171, 0.404);
   color: white;
