@@ -7,7 +7,7 @@
   font-size: large;
 font-weight: 525;}
   
-  body {;
+  body {
   font-family: courier, monospace;}
 
   header {
@@ -19,39 +19,45 @@ font-weight: 525;}
 .presentation {background-color: beige;
 max-width: 1920px;
   margin: 0 auto;
-padding: 40vh;
+padding: 2rem;
+  min-height: 100vh;
 display: flex;
 flex-direction: column;
 border-radius: 10px;}
-.presentation h1 {align-self: center;}
+.presentation h1 {align-self: center;
+margin-bottom: 20rem;}
 
 .about-me{background-color:rgba(210, 241, 252, 0.699);
 max-width: 1920px;
   margin: 0 auto;
  display: flex;
- padding: 50vh;
+ padding: 2rem;
+  min-height: 100vh;
  flex-direction: column;
 border-radius: 10px;}
-.about-me h1{align-self: center;}
+.about-me h1{align-self: center;
+margin-bottom: 20rem;}
 
 .skills {background-color: beige;
 max-width: 1920px;
   margin: 0 auto;;
  display: flex;
- padding: 50vh;
+ padding: 2rem;
+  min-height: 100vh;
  flex-direction: column;
 border-radius: 10px;}
-.skills h1{align-self: center;}
+.skills h1{align-self: center;
+margin-bottom: 20rem;}
 
 .contact {
 max-width: 1920px;
   margin: 0 auto;
-  padding: 10vh;
  display: flex;
  flex-direction: column;
 border-radius: 10px;}
 .contact p,h1 {align-self: center;
-color: black;}
+color: black;
+margin-bottom: 20rem;}
 
 .nav-links {
   list-style: none;
@@ -112,4 +118,3 @@ padding: 15px; }
     footer{background-color: rgba(255, 171, 171, 0.404);
   color: white;
   padding: 15px 20px; }
-
